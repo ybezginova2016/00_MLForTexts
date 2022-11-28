@@ -36,7 +36,8 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 
 count_tf_idf = TfidfVectorizer(stop_words=stopwords)
 
-# Чтобы посчитать TF-IDF для корпуса текстов, вызовем функцию fit_transform():
+# Чтобы посчитать TF-IDF для корпуса текстов,
+# вызовем функцию fit_transform():
 tf_idf = count_tf_idf.fit_transform(corpus)
 
 # Передав TfidfVectorizer() аргумент ngram_range, можно рассчитать
